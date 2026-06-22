@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="6.16.1@f1f5de594dc76faf8784e02d3dc4716c91c6f6ac">
+  <file src="config/cachet.php">
+    <UndefinedClass>
+      <code><![CDATA[User]]></code>
+    </UndefinedClass>
+  </file>
+  <file src="database/seeders/DatabaseSeeder.php">
+    <UndefinedMagicPropertyFetch>
+      <code><![CDATA[$user->id]]></code>
+      <code><![CDATA[$user->id]]></code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Actions/Component/UpdateComponent.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[Component]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[$component->fresh()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Actions/ComponentGroup/UpdateComponentGroup.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[ComponentGroup]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[$componentGroup->fresh()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Actions/Incident/UpdateIncident.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[Incident]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[$incident->fresh()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Actions/IncidentTemplate/UpdateIncidentTemplate.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[IncidentTemplate]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[$incidentTemplate->fresh()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Actions/Metric/UpdateMetric.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[Metric]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[$metric->fresh()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Actions/Schedule/UpdateSchedule.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[Schedule]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[$schedule->fresh()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Actions/Update/CreateUpdate.php">
+    <UndefinedPropertyFetch>
+      <code><![CDATA[$data->status]]></code>
+    </UndefinedPropertyFetch>
+  </file>
+  <file src="src/Actions/Webhook/DispatchWebhooks.php">
+    <InvalidReturnStatement>
+      <code><![CDATA[WebhookSubscription::whereEvent($this->eventName)->get()]]></code>
+    </InvalidReturnStatement>
+    <InvalidReturnType>
+      <code><![CDATA[Collection<WebhookSubscription>]]></code>
+    </InvalidReturnType>
+    <InvalidTemplateParam>
+      <code><![CDATA[Collection<WebhookSubscription>]]></code>
+    </InvalidTemplateParam>
+    <MissingTemplateParam>
+      <code><![CDATA[Collection<WebhookSubscription>]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Cachet/ThemeData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ThemeData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Component/CreateComponentRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateComponentRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Component/UpdateComponentRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UpdateComponentRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/ComponentGroup/CreateComponentGroupRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateComponentGroupRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/ComponentGroup/UpdateComponentGroupRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UpdateComponentGroupRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Incident/CreateIncidentRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateIncidentRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Incident/IncidentComponentRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[IncidentComponentRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Incident/UpdateIncidentRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UpdateIncidentRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/IncidentTemplate/CreateIncidentTemplateRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateIncidentTemplateRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/IncidentTemplate/UpdateIncidentTemplateRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UpdateIncidentTemplateRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/IncidentUpdate/CreateIncidentUpdateRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateIncidentUpdateRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/IncidentUpdate/EditIncidentUpdateRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditIncidentUpdateRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Metric/CreateMetricPointRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateMetricPointRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Metric/CreateMetricRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateMetricRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Metric/UpdateMetricRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UpdateMetricRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Schedule/CreateScheduleRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateScheduleRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Schedule/ScheduleComponentRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ScheduleComponentRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/Schedule/UpdateScheduleRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UpdateScheduleRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/ScheduleUpdate/CreateScheduleUpdateRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateScheduleUpdateRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Data/Requests/ScheduleUpdate/EditScheduleUpdateRequestData.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditScheduleUpdateRequestData]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Pages/Integrations/OhDear.php">
+    <MissingTemplateParam>
+      <code><![CDATA[OhDear]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Pages/Settings/ManageTheme.php">
+    <InvalidArgument>
+      <code><![CDATA[FilamentColor::getColors()['cachet']]]></code>
+    </InvalidArgument>
+  </file>
+  <file src="src/Filament/Resources/ApiKeys/ApiKeyResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ApiKeyResource]]></code>
+    </MissingTemplateParam>
+    <UndefinedMagicPropertyFetch>
+      <code><![CDATA[$record->expires_at]]></code>
+      <code><![CDATA[$record->expires_at]]></code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="src/Filament/Resources/ApiKeys/Pages/CreateApiKey.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateApiKey]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/ComponentGroups/ComponentGroupResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ComponentGroupResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/ComponentGroups/Pages/CreateComponentGroup.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateComponentGroup]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/ComponentGroups/Pages/EditComponentGroup.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditComponentGroup]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Components/ComponentResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ComponentResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Components/Pages/CreateComponent.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateComponent]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Components/Pages/EditComponent.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditComponent]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/IncidentTemplates/IncidentTemplateResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[IncidentTemplateResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/IncidentTemplates/Pages/CreateIncidentTemplate.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateIncidentTemplate]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/IncidentTemplates/Pages/EditIncidentTemplate.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditIncidentTemplate]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Incidents/IncidentResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[IncidentResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Incidents/Pages/CreateIncident.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateIncident]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Incidents/Pages/EditIncident.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditIncident]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Metrics/MetricResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[MetricResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Metrics/Pages/CreateMetric.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateMetric]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Metrics/Pages/EditMetric.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditMetric]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Schedules/Pages/CreateSchedule.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateSchedule]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Schedules/Pages/EditSchedule.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditSchedule]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Schedules/ScheduleResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ScheduleResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Subscribers/Pages/CreateSubscriber.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateSubscriber]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Subscribers/Pages/EditSubscriber.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditSubscriber]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Subscribers/SubscriberResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[SubscriberResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Users/Pages/CreateUser.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateUser]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Users/Pages/EditUser.php">
+    <MissingTemplateParam>
+      <code><![CDATA[EditUser]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/Users/UserResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[UserResource]]></code>
+    </MissingTemplateParam>
+    <UndefinedMagicMethod>
+      <code><![CDATA[isAdmin]]></code>
+      <code><![CDATA[isAdmin]]></code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="src/Filament/Resources/WebhookSubscriptions/Pages/CreateWebhookSubscription.php">
+    <MissingTemplateParam>
+      <code><![CDATA[CreateWebhookSubscription]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/WebhookSubscriptions/Pages/EditWebhookSubscription.php">
+    <InvalidArgument>
+      <code><![CDATA[[
+                $this->getFormContentComponent(),
+                $this->getRelationManagersContentComponent(),
+                view('cachet::filament.widgets.webhook-attempts', [
+                    'attempts' => $webhookSubscription->attempts,
+                ]),
+            ]]]></code>
+    </InvalidArgument>
+    <MissingTemplateParam>
+      <code><![CDATA[EditWebhookSubscription]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Resources/WebhookSubscriptions/WebhookSubscriptionResource.php">
+    <MissingTemplateParam>
+      <code><![CDATA[WebhookSubscriptionResource]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Filament/Widgets/Feed.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[string]]></code>
+    </InvalidNullableReturnType>
+    <InvalidPropertyFetch>
+      <code><![CDATA[$xml->channel]]></code>
+      <code><![CDATA[$xml->entry]]></code>
+    </InvalidPropertyFetch>
+    <NullableReturnStatement>
+      <code><![CDATA[preg_replace(
+            '/\*(.*?)\*/',
+            '<x-filament::link href="'.config('cachet.feed.uri').'" target="_blank" rel="nofollow noopener">$1</x-filament::link>',
+            __('cachet::cachet.feed.empty')
+        )]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/Filters/ScheduleStatusFilter.php">
+    <InvalidScalarArgument>
+      <code><![CDATA[$value]]></code>
+    </InvalidScalarArgument>
+    <MissingTemplateParam>
+      <code><![CDATA[Filter]]></code>
+    </MissingTemplateParam>
+    <MoreSpecificImplementedParamType>
+      <code><![CDATA[$query]]></code>
+    </MoreSpecificImplementedParamType>
+  </file>
+  <file src="src/Http/Controllers/Api/ComponentController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[ComponentResource::collection($components)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/ComponentGroupController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[ComponentGroupResource::collection($componentGroups)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/IncidentController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[IncidentResource::collection($incidents)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/IncidentTemplateController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[IncidentTemplateResource::collection($templates)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/IncidentUpdateController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[UpdateResource::collection($updates)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/MetricController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[MetricResource::collection($metrics)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/MetricPointController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[MetricPointResource::collection($points)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/ScheduleController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[ScheduleResource::collection($schedules)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Controllers/Api/ScheduleUpdateController.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[UpdateResource::collection($updates)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Middleware/Authenticate.php">
+    <MoreSpecificImplementedParamType>
+      <code><![CDATA[$next]]></code>
+    </MoreSpecificImplementedParamType>
+    <TypeDoesNotContainType>
+      <code><![CDATA[! empty($guard)]]></code>
+      <code><![CDATA[empty($guard)]]></code>
+    </TypeDoesNotContainType>
+  </file>
+  <file src="src/Http/Resources/Component.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[Incident::collection($this->incidents)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Resources/ComponentGroup.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[Component::collection($this->components)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Resources/Incident.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[Component::collection($this->components)]]></code>
+      <code><![CDATA[Update::collection($this->updates)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Resources/IncidentTemplate.php">
+    <InvalidMethodCall>
+      <code><![CDATA[diffForHumans]]></code>
+      <code><![CDATA[toDateTimeString]]></code>
+    </InvalidMethodCall>
+  </file>
+  <file src="src/Http/Resources/Metric.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[MetricPoint::collection('points')]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Http/Resources/Schedule.php">
+    <TooManyTemplateParams>
+      <code><![CDATA[Component::collection($this->components)]]></code>
+      <code><![CDATA[Update::collection($this->updates)]]></code>
+    </TooManyTemplateParams>
+  </file>
+  <file src="src/Models/Component.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function incidents(): BelongsToMany]]></code>
+      <code><![CDATA[public function schedules(): BelongsToMany]]></code>
+    </InvalidDocblock>
+  </file>
+  <file src="src/Models/ComponentGroup.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function components(): HasMany]]></code>
+    </InvalidDocblock>
+  </file>
+  <file src="src/Models/Incident.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function components(): BelongsToMany]]></code>
+      <code><![CDATA[public function updates(): MorphMany]]></code>
+    </InvalidDocblock>
+    <InvalidReturnStatement>
+      <code><![CDATA[Attribute::make(
+            get: fn () => $this->occurred_at ?: $this->created_at
+        )]]></code>
+    </InvalidReturnStatement>
+    <InvalidReturnType>
+      <code><![CDATA[Attribute<Carbon, never>]]></code>
+    </InvalidReturnType>
+  </file>
+  <file src="src/Models/Metric.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function metricPoints(): HasMany]]></code>
+    </InvalidDocblock>
+  </file>
+  <file src="src/Models/MetricPoint.php">
+    <InvalidOperand>
+      <code><![CDATA[$this->value * $this->counter]]></code>
+      <code><![CDATA[30 * round($timestamp / 30)]]></code>
+    </InvalidOperand>
+  </file>
+  <file src="src/Models/Schedule.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function components(): BelongsToMany]]></code>
+      <code><![CDATA[public function scheduleComponents(): HasMany]]></code>
+      <code><![CDATA[public function updates(): MorphMany]]></code>
+    </InvalidDocblock>
+  </file>
+  <file src="src/Models/ScheduleComponent.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function component(): BelongsTo]]></code>
+      <code><![CDATA[public function schedule(): BelongsTo]]></code>
+    </InvalidDocblock>
+  </file>
+  <file src="src/Models/Subscriber.php">
+    <InvalidDocblock>
+      <code><![CDATA[public function components(): BelongsToMany]]></code>
+    </InvalidDocblock>
+  </file>
+  <file src="src/Models/WebhookSubscription.php">
+    <PublicModelAccessor>
+      <code><![CDATA[getSuccessRate24hAttribute]]></code>
+    </PublicModelAccessor>
+  </file>
+  <file src="src/PendingRouteRegistration.php">
+    <NullArgument>
+      <code><![CDATA[config('cachet.domain', null)]]></code>
+    </NullArgument>
+  </file>
+  <file src="src/QueryBuilders/ScheduleBuilder.php">
+    <MissingTemplateParam>
+      <code><![CDATA[ScheduleBuilder]]></code>
+    </MissingTemplateParam>
+    <UndefinedMethod>
+      <code><![CDATA[orWhereNull]]></code>
+      <code><![CDATA[orWhereNull]]></code>
+      <code><![CDATA[whereNotNull]]></code>
+    </UndefinedMethod>
+  </file>
+  <file src="src/Status.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[object{total: int, operational: int, performance_issues: int, partial_outage: int, major_outage: int}]]></code>
+      <code><![CDATA[object{total: int, resolved: int, unresolved: int}]]></code>
+    </InvalidNullableReturnType>
+    <InvalidOperand>
+      <code><![CDATA[((int) $this->components()->major_outage / (int) $this->components()->total) * 100]]></code>
+    </InvalidOperand>
+    <NullableReturnStatement>
+      <code><![CDATA[$this->components ??= Component::query()
+            ->toBase()
+            ->where('enabled', true)
+            ->selectRaw('count(*) as total')
+            ->selectRaw('sum(case when status = ? then 1 else 0 end) as operational', [ComponentStatusEnum::operational])
+            ->selectRaw('sum(case when status = ? then 1 else 0 end) as performance_issues', [ComponentStatusEnum::performance_issues])
+            ->selectRaw('sum(case when status = ? then 1 else 0 end) as partial_outage', [ComponentStatusEnum::partial_outage])
+            ->selectRaw('sum(case when status = ? then 1 else 0 end) as major_outage', [ComponentStatusEnum::major_outage])
+            ->selectRaw('sum(case when status = ? then 1 else 0 end) as under_maintenance', [ComponentStatusEnum::under_maintenance])
+            ->first()]]></code>
+      <code><![CDATA[$this->incidents ??= Incident::query()
+            ->toBase()
+            ->selectRaw('count(*) as total')
+            ->selectRaw('sum(case when ? in (incidents.status, coalesce(latest_update.status, ?)) then 1 else 0 end) as resolved', [IncidentStatusEnum::fixed->value, 0])
+            ->selectRaw('sum(case when ? not in (incidents.status, coalesce(latest_update.status, ?)) then 1 else 0 end) as unresolved', [IncidentStatusEnum::fixed->value, 0])
+            ->joinSub(function (Builder $query) {
+                $query
+                    ->select('iu1.updateable_id', 'iu1.status')
+                    ->from('updates', 'iu1')
+                    ->joinSub(function (Builder $query) {
+                        $query->select('updateable_id')
+                            ->selectRaw('max(id) as max_id')
+                            ->from('updates')
+                            ->where('updates.updateable_type', Relation::getMorphAlias(Incident::class))
+                            ->groupBy('updateable_id');
+                    }, 'iu2', 'iu1.id', '=', 'iu2.max_id', 'left');
+            }, 'latest_update', 'latest_update.updateable_id', '=', 'incidents.id', 'left')
+            ->first()]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/View/Components/IncidentTimeline.php">
+    <InvalidTemplateParam>
+      <code><![CDATA[Incident::query()
+            ->with([
+                'components',
+                'updates' => fn ($query) => $query->orderByDesc('created_at'),
+            ])
+            ->visible(auth()->check())
+            ->when($this->appSettings->recent_incidents_only, function ($query) {
+                $query->where(function ($query) {
+                    $query->whereDate(
+                        'occurred_at',
+                        '>',
+                        Carbon::now()->subDays($this->appSettings->recent_incidents_days)->format('Y-m-d')
+                    )->orWhere(function ($query) {
+                        $query->whereNull('occurred_at')->whereDate(
+                            'created_at',
+                            '>',
+                            Carbon::now()->subDays($this->appSettings->recent_incidents_days)->format('Y-m-d')
+                        );
+                    });
+                });
+            })
+            ->when(! $this->appSettings->recent_incidents_only, function ($query) use ($endDate, $startDate) {
+                $query->where(function (Builder $query) use ($endDate, $startDate) {
+                    $query->whereBetween('occurred_at', [
+                        $endDate->startOfDay()->toDateTimeString(),
+                        $startDate->endofDay()->toDateTimeString(),
+                    ])->orWhere(function (Builder $query) use ($endDate, $startDate) {
+                        $query->whereNull('occurred_at')->whereBetween('created_at', [
+                            $endDate->startOfDay()->toDateTimeString(),
+                            $startDate->endofDay()->toDateTimeString(),
+                        ]);
+                    });
+                });
+            })
+            ->get()
+            ->sortByDesc(fn (Incident $incident) => $incident->timestamp)
+            ->groupBy(fn (Incident $incident) => $incident->timestamp->toDateString())
+            ->union(
+                // Back-fill any missing dates...
+                collect($endDate->toPeriod($startDate))
+                    ->keyBy(fn ($period) => $period->toDateString())
+                    ->map(fn ($period) => collect())
+            )]]></code>
+    </InvalidTemplateParam>
+  </file>
+  <file src="src/View/Htmlable/TextWithLink.php">
+    <InvalidNullableReturnType>
+      <code><![CDATA[string]]></code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement>
+      <code><![CDATA[preg_replace(
+            "/\*(.*)\*/",
+            "<x-filament::link href=\"$this->url\" target=\"_blank\" rel=\"nofollow noopener\">$1</x-filament::link>",
+            $this->text,
+        )]]></code>
+    </NullableReturnStatement>
+  </file>
+  <file src="src/View/ViewManager.php">
+    <InvalidArgument>
+      <code><![CDATA[$hook]]></code>
+    </InvalidArgument>
+    <NullArrayOffset>
+      <code><![CDATA[$this->renderHooks[$name][null]]]></code>
+    </NullArrayOffset>
+  </file>
+</files>
